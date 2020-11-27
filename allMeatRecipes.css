@@ -1,0 +1,336 @@
+/*#####################################################################*/
+/*#################                        ############################*/
+/*#################      WHOLE PAGE        ############################*/
+/*#################                        ############################*/
+/*#####################################################################*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+
+}
+
+html, body { 
+    overflow-x: hidden;
+    width: 100%;
+    
+    
+}
+    
+
+/* Container that contains body and top nav bar and image */
+.box1{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+}
+
+
+/*#####################################################################*/
+/*#################                        ############################*/
+/*#################  TOP BACKGROUND IMAGE  ############################*/
+/*#################                        ############################*/
+/*#####################################################################*/
+
+.slideshow-container img{ 
+    position: relative ;
+    width: 100vw;
+    height: 65vh;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    object-fit: cover;  
+    overflow: hidden;
+    display: block; /* Otherwise img element is inline of div and so a default whitespace is inserted*/
+
+}
+.spiceImage{
+    /* overflow: hidden; */
+    position: relative;
+    
+}
+
+/*#####################################################################*/
+/*#################                        ############################*/
+/*#################  BLOG NAME AESTHETICS  ############################*/
+/*#################                        ############################*/
+/*#####################################################################*/
+
+.blogName{
+    font-family: "Verdana", "Times New Roman", serif;
+    font-size: 22pt;
+    position: absolute ;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    vertical-align: middle;
+    top: 80px;
+    padding: 6px;
+    color: white;
+    z-index: 3;
+    overflow: hidden;
+    line-height: 10vh;
+    
+
+    
+}
+/* creating an element and positioning under .blogName and made transparent*/
+.bg{
+    position: absolute ;
+    z-index: 2;
+    width: 100vw; 
+    height: 10vh;
+    /*height: 50px;*/
+    padding: 6px;
+    top: 80px; 
+    /*filter: blur(1.5px); --> creates blurred background */
+    background-color: rgba(0, 0, 0, 0.874);
+    overflow: hidden;
+    
+}
+
+/*#####################################################################*/
+/*#################                        ############################*/
+/*#################    NAVIGATION BAR      ############################*/
+/*#################                        ############################*/
+/*#####################################################################*/
+
+.main-menu-container{
+position: absolute;
+z-index: 2;
+width: 100vw; 
+height: 10vh;
+padding: 0px;
+bottom: 0px; 
+overflow: visible;
+font-weight: bold;
+
+}
+
+.main-navigation {
+    position: absolute;
+    width: 100vw;
+    z-index: 3;
+    height: 10vh;
+    overflow: visible;
+}
+
+ul, li{
+    list-style:none; 
+
+    
+}
+
+.main-navigation ul{
+    position: relative;
+    height: 10vh;
+    
+}
+
+
+.main-navigation a{
+    color: #fafafa;
+    display:block;
+    text-decoration:none;
+    width: 100%;
+    font-family: "Verdana", "Times New Roman", serif;
+    font-size: 15pt;
+
+}
+
+.main-navigation > ul{
+    display:table; 
+    width:100%;
+    border-collapse: collapse;
+
+}
+
+.main-navigation > ul > li{ display:table-cell;margin: 0;}
+.main-navigation > ul > li > a{text-align:center; margin: 0;font-size: 2.5vw;
+}
+
+.main-navigation > ul > li {
+    vertical-align: middle;
+    background-color:  rgba(0, 0, 0, 0.874);
+    /* width: calc(100%/3); */    
+    /* border-radius: 5em;  */
+    /* border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px 5px 0px 5px; */
+    margin: 0%;
+    bottom: 0px;
+    box-sizing:border-box;
+    
+}
+
+/*#######################################################################################*/
+/*#################                                          ############################*/
+/*#################      RECIPE BOOK DROP-DOWN SUB MENU      ############################*/
+/*#################                                          ############################*/
+/*#######################################################################################*/
+
+/* Container that has tab that will have a secondary drop-down menu when you hover over it */
+.homeTab{width: calc(100%/3);height: 10vh;}
+.contactTab{width: calc(100%/3);height: 10vh;} 
+.recipeBookTab{
+    height: 10vh;
+    clear: both;
+    line-height:10vh;
+    position: absolute;
+    width: 33.5%;
+    /* box-sizing: border-box; */
+}
+
+.sub-menu{
+    z-index: 1; 
+    display: none;
+    position: absolute; 
+    width:100%;
+    top: 0vh;
+    right: 0vh;
+    
+}
+
+.sub-menu a{
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align:center;
+    vertical-align: middle;
+    background-color:  rgba(0, 0, 0, 0.874);
+    color: rgb(255, 255, 255);
+     
+    font-size: 2.5vw;
+    
+}
+
+/* Drop down recipe categories menu when hover container that has only recipe book */
+.recipeBookTab:hover .sub-menu{
+    display: block;
+    
+}
+
+.sub-menu a:hover {
+    color: rgb(160, 21, 21);
+    border: 1px solid white;    
+} 
+
+.main-navigation > ul > li:hover{
+    box-shadow: inset 0px -5px 0px #ffffff;
+} 
+
+
+/*#####################################################################*/
+/*#################                        ############################*/
+/*#################      WELCOME BODY      ############################*/
+/*#################                        ############################*/
+/*#####################################################################*/
+
+.mainBody {
+    font-family: "Verdana", "Times New Roman", serif;
+    /* position: absolute;    */
+    float: left;
+    width: 100vw;
+    /* height: 60vh; */
+
+    z-index: 0;
+    position: relative;
+    background-color: rgb(233, 109, 7);
+}
+
+.heading1{
+    font-size: 2.5vw;
+    background-color:  rgb(233, 109, 7);
+    position: relative;
+    float: top;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    height: 10vh;
+    overflow: hidden;
+    line-height: 70px; 
+    min-height: 50px; /*to stop text being clipped from */
+    width: 100%;
+
+}
+
+p{
+    width: 100%;
+    
+    background-color: rgb(233, 109, 7);
+    position: relative;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    float: bottom;
+    padding: 5vh 5vw;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    font-size: 2.0vw;
+
+}
+.box1{
+    background-color: rgb(233, 109, 7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {
+    display: none;
+  }
+
+.dotBox{
+    position: absolute;
+    top: 1%;
+    right:50%;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.874);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
